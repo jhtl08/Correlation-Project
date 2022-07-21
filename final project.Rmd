@@ -16,7 +16,9 @@ output:
 (to be added later)
 
 ## Results
-|           The price and CPU mark (measured by PassMark) of 1,967 different CPUs were analyzed in this study. Through simple linear regression, the following regression model is obtained:
+
+---
+|           <font size="3">The price and CPU mark (measured by PassMark) of 1,967 different CPUs were analyzed in this study. Through simple linear regression, the following regression model is obtained:
 ```{r warning=FALSE, message=FALSE, fig.align='center'}
 cpuData<-read.csv("CPU_benchmark_v4.csv")
 model<-lm(cpuData$price~cpuData$cpuMark)
@@ -27,13 +29,51 @@ abline(model, col=2, lwd=3)
 <center>
 #### $Price = -26.0569634 + 0.0580751*(CPU Mark)$
 </center>
+|           The Pearson correlation coefficient and r-squared are: 
+```{r}
+r=cor(cpuData$cpuMark, cpuData$price)
+sprintf("r = %f", r)
+sprintf("r-squared = %f", r^2)
 
-|           In this analysis, this model of correlation will be tested with significance level α = 0.05 (95% confidence interval). 
+```
+|           This model of correlation will be tested with significance level α = 0.05 (95% confidence interval). The test goes as follows:
 
+<ul>
+<li>Null Hypothesis $H_0$: $β_0=0$</li>
+<li>Alternative Hypothesis $H_1$: $β_0\neq0$</li>
+<li>Test Statistic: </li>
+<center>$F=\frac{\frac{{\rm RSS}_R-{\rm RSS}_{UR}}{\rho_{fit}-\rho_{mean}}}{\frac{{\rm RSS}_{UR}}{n-\rho_{fit}}}$ </center>
+<li> We reject $H_0$ if $F>F_{0.05,1965}$
+```{r}
+F=qf(0.05, 1, 1965, lower.tail = FALSE)
+sprintf('F_{0.05,1965} = %f',F)
+```
+Therefore, we reject $H_0$ if $F>3.846196$.</li>
+</ul>
 
+**Calculation:**
+```{r}
+summary(model)
+```
+|           The F-statistic is calculated to be 1812 which is far greater than 3.846. Therefore, we reject $H_0$. 
+</font>
+
+#### **Residual Analysis**
+```{r warning=FALSE, message=FALSE, fig.align='center'}
+library(ggfortify)
+autoplot(object = model) + theme_classic()
+
+```
+
+|           Looking at the Residuals vs Fitted plot, we see a very slight upward concavity on the line. In the normal Q-Q plot, a lot of residuals are seen to deviate away from the line especially on the far right.
 
 ## Discussion
-(to be added later)
+(for r pearson correlation coefficient)This shows a low to moderate positive correlation between CPU Mark and price.
+(for F statistic) The correlation between CPU mark and price is statistically significant (with alpha 0.05).
+
+(residual analysis) change in the variation within the 1000-3000 CPU Mark, (the model predicts slightly higher than what the actual data suggests)
+
+doesn't follow normal distribution as there are lots of "outliers" as CPU Marks go up (data points that deviate from our predictions )
 
 ## Conclusion
 (to be added later)
