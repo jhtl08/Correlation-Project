@@ -1,0 +1,26 @@
+---
+title: "ENGG 21 Final Project"
+author: "Calpito, Casenas, de Leon, Lorenzo, Oba"
+date: 'July 21, 2022'
+output: 
+  html_document:
+      code_folding: "show"
+      theme: darkly
+      highlight: tango
+      center: true
+---
+# Correlation of CPU Price and Performance
+## Introduction
+(to be added later)
+## Methodology
+(to be added later)
+## Results
+
+(in progress, don't push yet)
+
+## Discussion
+(to be added later)
+## Conclusion
+(to be added later)
+## Reference
+(to be added later)
