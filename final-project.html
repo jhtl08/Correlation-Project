@@ -519,11 +519,11 @@ RSS}_{UR}}{\rho_{fit}-\rho_{mean}}}{\frac{{\rm
 RSS}_{UR}}{n-\rho_{fit}}}\)</span>
 </center>
 <li>
-<p>We reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(F&gt;F_{0.05,1965}\)</span></p>
-<pre class="r"><code>F=qf(0.05, 1, 1965, lower.tail = FALSE)
-sprintf(&#39;F_{0.05,1965} = %f&#39;,F)</code></pre>
-<pre><code>## [1] &quot;F_{0.05,1965} = 3.846196&quot;</code></pre>
-Therefore, we reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(F&gt;3.846196\)</span>.
+<p>We reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(F&gt;F_{0.025,1965}\)</span></p>
+<pre class="r"><code>F=qf(0.025, 1, 1965, lower.tail = FALSE)
+sprintf(&#39;F_{0.025,1965} = %f&#39;,F)</code></pre>
+<pre><code>## [1] &quot;F_{0.025,1965} = 5.031595&quot;</code></pre>
+Therefore, we reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(F&gt;5.031595\)</span>.
 </li>
 </ul>
 <p><strong>Calculation:</strong></p>
@@ -547,7 +547,7 @@ Therefore, we reject <span class="math inline">\(H_0\)</span> if <span class="ma
 ## Multiple R-squared:  0.4797, Adjusted R-squared:  0.4794 
 ## F-statistic:  1812 on 1 and 1965 DF,  p-value: &lt; 2.2e-16</code></pre>
 <div class="line-block">          The F-statistic is calculated to be
-1812 which is far greater than 3.846. Therefore, we reject <span class="math inline">\(H_0\)</span>.</div>
+1812 which is far greater than 5.032. Therefore, we reject <span class="math inline">\(H_0\)</span>.</div>
 </div>
 <div id="residual-analysis" class="section level4">
 <h4><strong>Residual Analysis</strong></h4>

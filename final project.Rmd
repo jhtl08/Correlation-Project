@@ -54,19 +54,19 @@ sprintf("r-squared = %f", r^2)
 <li>Alternative Hypothesis $H_1$: $β_0\neq0$</li>
 <li>Test Statistic: </li>
 <center>$F=\frac{\frac{{\rm RSS}_R-{\rm RSS}_{UR}}{\rho_{fit}-\rho_{mean}}}{\frac{{\rm RSS}_{UR}}{n-\rho_{fit}}}$ </center>
-<li> We reject $H_0$ if $F>F_{0.05,1965}$
+<li> We reject $H_0$ if $F>F_{0.025,1965}$
 ```{r}
-F=qf(0.05, 1, 1965, lower.tail = FALSE)
-sprintf('F_{0.05,1965} = %f',F)
+F=qf(0.025, 1, 1965, lower.tail = FALSE)
+sprintf('F_{0.025,1965} = %f',F)
 ```
-Therefore, we reject $H_0$ if $F>3.846196$.</li>
+Therefore, we reject $H_0$ if $F>5.031595$.</li>
 </ul>
 
 **Calculation:**
 ```{r}
 summary(model)
 ```
-|           The F-statistic is calculated to be 1812 which is far greater than 3.846. Therefore, we reject $H_0$. 
+|           The F-statistic is calculated to be 1812 which is far greater than 5.032. Therefore, we reject $H_0$. 
 
 #### **Residual Analysis**
 ```{r warning=FALSE, message=FALSE, fig.align='center'}
