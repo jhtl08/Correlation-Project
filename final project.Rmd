@@ -5,22 +5,39 @@ date: 'July 21, 2022'
 output: 
   html_document:
       code_folding: "show"
-      theme: darkly
-      highlight: tango
-      center: true
+      theme: united
 ---
 # Correlation of CPU Price and Performance
+
 ## Introduction
 (to be added later)
+
 ## Methodology
 (to be added later)
+
 ## Results
+The price and CPU mark (measured by Passmark) of 1,967 different CPUs were analyzed in this study. Here's a scatter plot to visualize:
+
+```{r warning=FALSE, message=FALSE, fig.align='center'}
+library(tidyverse)
+
+cpuData<-read.csv("CPU_benchmark_v4.csv")
+
+cpuData %>% ggplot(aes(x = cpuMark, y = price)) + geom_point()+ theme_bw()
+
+```
+
+
+
+In this analysis, the correlation between CPU price and performance will be tested with α= 0.05 (95% confidence interval). 
 
 (in progress, don't push yet)
 
 ## Discussion
 (to be added later)
+
 ## Conclusion
 (to be added later)
+
 ## Reference
 (to be added later)
