@@ -10,14 +10,25 @@ output:
 # Correlation of CPU Price and Performance
 
 ## Introduction
+
+---
+
+<font size="3">
 (to be added later)
+</font>
 
 ## Methodology
+
+---
+
+<font size="3">
 (to be added later)
+</font>
 
 ## Results
 
 ---
+
 |           <font size="3">The price and CPU mark (measured by PassMark) of 1,967 different CPUs were analyzed in this study. Through simple linear regression, the following regression model is obtained:
 ```{r warning=FALSE, message=FALSE, fig.align='center'}
 cpuData<-read.csv("CPU_benchmark_v4.csv")
@@ -56,7 +67,6 @@ Therefore, we reject $H_0$ if $F>3.846196$.</li>
 summary(model)
 ```
 |           The F-statistic is calculated to be 1812 which is far greater than 3.846. Therefore, we reject $H_0$. 
-</font>
 
 #### **Residual Analysis**
 ```{r warning=FALSE, message=FALSE, fig.align='center'}
@@ -64,18 +74,30 @@ library(ggfortify)
 autoplot(object = model) + theme_classic()
 ```
 
-|           Looking at the Residuals vs Fitted plot, we see a very slight upward concavity on the line. In the normal Q-Q plot, a lot of residuals are seen to deviate away from the line especially on the far right.
+|           Looking at the Residuals vs Fitted plot, we see a very slight upward concavity on the line within the 1000 to 3000 values of x. In the normal Q-Q plot, a lot of residuals are seen to deviate away from the line especially on the far right.</font>
 
 ## Discussion
-(for r pearson correlation coefficient)This shows a low to moderate positive correlation between CPU Mark and price.
-(for F statistic) The correlation between CPU mark and price is statistically significant (with alpha 0.05).
 
-(residual analysis) change in the variation within the 1000-3000 CPU Mark, (the model predicts slightly higher than what the actual data suggests)
+---
 
-doesn't follow normal distribution as there are lots of "outliers" as CPU Marks go up (data points that deviate going higher than the model predicts)
+|           <font size="3">Upon analysis of data, we arrived at the linear model:  $Price = -26.0569634 + 0.0580751*CPU Mark$ to predict the price of a CPU, given a measure of its performance. It has a Pearson correlation coefficient of `r cor(cpuData$cpuMark, cpuData$price)` and an r-squared of `r (cor(cpuData$cpuMark, cpuData$price))^2`. This indicates a low to moderate positive correlation between CPU mark and price. We can say that around half (~48%) of the variation in price can be explained by our model.
+|           Using F-test, we rejected the null hypothesis (that the linear model obtained doesn't account for the variation of the price) with strong evidence. This proves that the correlation found between CPU mark and price in this analysis is statistically significant.
+|           Through residual analysis, we were able to point out that the regression model we obtained predicts a slightly higher price at around 10000 to 30000 CPU marks. We also observed that the data became less normally distributed as the CPU mark increased, implying that CPU prices increased faster than the model predicted.
+</font>
 
 ## Conclusion
-(to be added later)
 
-## Reference
+---
+
+<font size="3">
 (to be added later)
+</font>
+
+
+## References
+
+---
+
+<font size="3">
+(to be added later)
+</font>
