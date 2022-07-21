@@ -62,7 +62,6 @@ summary(model)
 ```{r warning=FALSE, message=FALSE, fig.align='center'}
 library(ggfortify)
 autoplot(object = model) + theme_classic()
-
 ```
 
 |           Looking at the Residuals vs Fitted plot, we see a very slight upward concavity on the line. In the normal Q-Q plot, a lot of residuals are seen to deviate away from the line especially on the far right.
@@ -73,7 +72,7 @@ autoplot(object = model) + theme_classic()
 
 (residual analysis) change in the variation within the 1000-3000 CPU Mark, (the model predicts slightly higher than what the actual data suggests)
 
-doesn't follow normal distribution as there are lots of "outliers" as CPU Marks go up (data points that deviate from our predictions )
+doesn't follow normal distribution as there are lots of "outliers" as CPU Marks go up (data points that deviate going higher than the model predicts)
 
 ## Conclusion
 (to be added later)
