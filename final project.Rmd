@@ -14,25 +14,6 @@ output:
 
 ## Methodology
 (to be added later)
-<<<<<<< HEAD
-=======
-
-## Results
-The price and CPU mark (measured by Passmark) of 1,967 different CPUs were analyzed in this study. Here's a scatter plot to visualize:
-
-```{r warning=FALSE, message=FALSE, fig.align='center'}
-library(tidyverse)
-
-cpuData<-read.csv("CPU_benchmark_v4.csv")
-
-cpuData %>% ggplot(aes(x = cpuMark, y = price)) + geom_point()+ theme_bw()
-
-```
-
-
-
-In this analysis, the correlation between CPU price and performance will be tested with α= 0.05 (95% confidence interval). 
->>>>>>> b3a9752591d3131712b3834ba42e3edc9997ad14
 
 ## Results
 |           The price and CPU mark (measured by PassMark) of 1,967 different CPUs were analyzed in this study. Through simple linear regression, the following regression model is obtained:
