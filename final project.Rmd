@@ -5,22 +5,38 @@ date: 'July 21, 2022'
 output: 
   html_document:
       code_folding: "show"
-      theme: darkly
-      highlight: tango
-      center: true
+      theme: united
 ---
 # Correlation of CPU Price and Performance
+
 ## Introduction
 (to be added later)
+
 ## Methodology
 (to be added later)
-## Results
 
-(in progress, don't push yet)
+## Results
+|           The price and CPU mark (measured by PassMark) of 1,967 different CPUs were analyzed in this study. Through simple linear regression, the following regression model is obtained:
+```{r warning=FALSE, message=FALSE, fig.align='center'}
+cpuData<-read.csv("CPU_benchmark_v4.csv")
+model<-lm(cpuData$price~cpuData$cpuMark)
+plot(x = cpuData$cpuMark, y = cpuData$price, main="CPU Mark vs Price", xlab="cpu mark", ylab="price")
+abline(model, col=2, lwd=3)
+
+```
+<center>
+#### $Price = -26.0569634 + 0.0580751*(CPU Mark)$
+</center>
+
+|           In this analysis, this model of correlation will be tested with significance level α = 0.05 (95% confidence interval). 
+
+
 
 ## Discussion
 (to be added later)
+
 ## Conclusion
 (to be added later)
+
 ## Reference
 (to be added later)
