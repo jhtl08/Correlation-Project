@@ -66,7 +66,7 @@ Therefore, we reject $H_0$ if $F>5.031595$.</li>
 ```{r}
 summary(model)
 ```
-|           The F-statistic is calculated to be 1812 which is far greater than 5.032. Therefore, we reject $H_0$. 
+|           The F-statistic is calculated to be 1812 which is far greater than 5.032. Therefore, we reject $H_0$. We can also notice a p-value of $2x10^{-16}$ for cpuMark which is way less than 0.025. 
 
 #### **Residual Analysis**
 ```{r warning=FALSE, message=FALSE, fig.align='center'}
@@ -81,7 +81,7 @@ autoplot(object = model) + theme_classic()
 ---
 
 |           <font size="3">Upon analysis of data, we arrived at the linear model:  $Price = -26.0569634 + 0.0580751*CPU Mark$ to predict the price of a CPU, given a measure of its performance. It has a Pearson correlation coefficient of `r cor(cpuData$cpuMark, cpuData$price)` and an r-squared of `r (cor(cpuData$cpuMark, cpuData$price))^2`. This indicates a low to moderate positive correlation between CPU mark and price. We can say that around half (~48%) of the variation in price can be explained by our model.
-|           Using F-test, we rejected the null hypothesis (that the linear model obtained doesn't account for the variation of the price) with strong evidence. This proves that the correlation found between CPU mark and price in this analysis is statistically significant.
+|           Using F-test, we rejected the null hypothesis (that the linear model obtained doesn't account for the variation of the price) with strong evidence. This proves that the correlation found between CPU mark and price in this analysis is statistically significant. Along with this, we have a statistically significant p-value of CPU Mark, which means it will give a reliable prediction of CPU price.
 |           Through residual analysis, we were able to point out that the regression model we obtained predicts a slightly higher price at around 10000 to 30000 CPU marks. We also observed that the data became less normally distributed as the CPU mark increased, implying that CPU prices increased faster than the model predicted.
 </font>
 
