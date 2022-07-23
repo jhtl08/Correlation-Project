@@ -88,7 +88,7 @@ autoplot(object = model) + theme_classic()
 
 ---
 
-|           <font size="3">The data set is able to show the price, performance, and general information of CPUs and showed a positive correlation between CPU price and performance. The analysis was able to exhibit this relationship using a linear model. This can be useful for those looking into purchasing computers or CPUs, since it allows them to determine which CPU will offer the most performance at the price point of their choosing and vice versa. 
+|           <font size="3">The data set is able to show the price, performance, and general information of CPUs. The study showed a positive correlation between CPU price and performance. The analysis was able to exhibit this relationship using a linear model. This can be useful for those looking into purchasing computers or CPUs, since it allows them to determine which CPU will offer the most performance at the price point of their choosing and vice versa. 
 </font>
 
 
@@ -105,5 +105,5 @@ autoplot(object = model) + theme_classic()
 
 [4]Dave, Dinesh S., and Kathy E. Fitzpatrick. 1991. “Price/Performance of Desktop Computers in the U.S. Computer Industry.” Information & Management 20 (3): 161–82. https://doi.org/10.1016/0378-7206(91)90053-5.
 
-[5]“PassMark Software - List of Benchmarked CPUs.” n.d. Www.cpubenchmark.net. https://www.cpubenchmark.net/cpu_list.php.
+[5]“PassMark Software - List of Benchmarked CPUs.” n.d. www.cpubenchmark.net. https://www.cpubenchmark.net/cpu_list.php.
 </font>
