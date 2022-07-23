@@ -1,5 +1,5 @@
 ---
-title: "ENGG 21 Final Project"
+title: "Correlation of CPU Price and Performance"
 author: "Calpito, Casenas, de Leon, Lorenzo, Oba"
 date: 'July 21, 2022'
 output: 
@@ -8,7 +8,7 @@ output:
       theme: united
 ---
 
-# Correlation of CPU Price and Performance
+#
 
 ## Introduction
 
@@ -97,9 +97,13 @@ autoplot(object = model) + theme_classic()
 ---
 
 <font size="3">
-[1]The Arm source
-[2]The Brittanica Source
-[3]The McLellan Source
+[1]Arm. n.d. “Central Processing Unit.” Accessed July 21, 2022. https://www.arm.com/glossary/cpu
+
+[2]Britannica. n.d. “Price.” Accessed July 21, 2022. https://www.britannica.com/topic/price-economics
+
+[3]McLellan, Charles. 2020. “How to choose the right PC: Everything you need to know about picking the right computer for work.” ZDNet. https://www.zdnet.com/article/how-to-chose-the-right-pc-everything-you-need-to-know-about-picking-the-right-computer-for-work/
+
 [4]Dave, Dinesh S., and Kathy E. Fitzpatrick. 1991. “Price/Performance of Desktop Computers in the U.S. Computer Industry.” Information & Management 20 (3): 161–82. https://doi.org/10.1016/0378-7206(91)90053-5.
-[5]https://www.cpubenchmark.net/cpu_list.php
+
+[5]“PassMark Software - List of Benchmarked CPUs.” n.d. Www.cpubenchmark.net. https://www.cpubenchmark.net/cpu_list.php.
 </font>
