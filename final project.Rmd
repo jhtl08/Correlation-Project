@@ -21,7 +21,7 @@ output:
 
 ---
 
-|           <font size="3">The data set used in this study was gathered from PassMark's collection of user benchmarks. The researchers decided to employ Pearson correlation to determine the significance of the relationship between the predictor variable (the price of the CPU) and the response variable (CPU performance). Subsequently, the study will be able to produce a linear model and equation that can be used to predict the price of a CPU depending on its performance, which is usually measured through benchmarks.  Finally, through residual analysis, the researchers should be able to determine the accuracy of the linear model. The study, therefore, assumes a null hypothesis which states that the linear model obtained does not account for the variation of the CPU prices.</font>
+|           <font size="3">The data set used in this study was gathered from PassMark's collection of user benchmarks.$^{[4]}$ The researchers decided to employ Pearson correlation to determine the significance of the relationship between the predictor variable (the price of the CPU) and the response variable CPU Mark (PassMark's Measure of CPU performance). Subsequently, the study will be able to produce a linear model and equation that can be used to predict the price of a CPU depending on its performance, which is usually measured through benchmarks.  Finally, through residual analysis, the researchers should be able to determine the accuracy of the linear model. The study, therefore, assumes a null hypothesis which states that the linear model obtained does not account for the variation of the CPU prices.</font>
 
 ## Results
 
@@ -96,5 +96,8 @@ autoplot(object = model) + theme_classic()
 ---
 
 <font size="3">
-(to be added later)
+[1]The Arm source
+[2]The Brittanica Source
+[3]The McLellan Source
+[4]https://www.cpubenchmark.net/cpu_list.php
 </font>
