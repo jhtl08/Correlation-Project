@@ -7,25 +7,21 @@ output:
       code_folding: "show"
       theme: united
 ---
+
 # Correlation of CPU Price and Performance
 
 ## Introduction
 
 ---
 
-<font size="3">
-(to be added later)
+|           <font size="3">Computers have become very significant nowadays especially when much of the learning and working set-up transitioned to online medium due to the COVID-19 pandemic. The demand for computers continues to expand and several types of computers with varying CPU performance continue to exist in the market at varied price markings. CPU stands for central processing unit, which serves as the computer's control center and is sometimes referred to as the main processor that operates the computer (arm, n.d.).  The price is the amount of money that must be paid in exchange for a product (Britannica, n.d.). The CPU performance and pricing of a computer are two factors that are mostly being considered in acquiring a computer unit (McLellan 2020) Some individuals assume that high-priced computers can provide high performance, or high CPU performance is more expensive. But does it mean that price is equivalent to the CPU's performance value? As buyers, we will always aim for low-cost yet high-performance CPUs. This study will analyze the correlation between these two variables, namely CPU performance and price in the market by assessing the statistical relationship between them. The group decided to conduct this research in order to provide consumers with statistical information about the relationship between price and CPU performance. This study aims to aid computer buyers in the buying process and in deciding to purchase a computer unit.
 </font>
 
 ## Methodology
 
 ---
 
-|           <font size="3">The data set used in this study was gathered from PassMark's collection of user benchmarks. The researchers decided to employ Pearson correlation to determine the significance of the relationship between the predictor variable (the price of the CPU) and the response variable (CPU performance). Subsequently, the study will be able to produce a linear model and equation that can be used to predict the price of a CPU depending on its performance, which is usually measured through benchmarks.  Finally, through residual analysis, the researchers should be able to determine the accuracy of the linear model. The study, therefore, assumes a null hypothesis which states that the linear model obtained does not account for the variation of the CPU prices.
-
-<font size="3">
-(to be added later)
-</font>
+|           <font size="3">The data set used in this study was gathered from PassMark's collection of user benchmarks. The researchers decided to employ Pearson correlation to determine the significance of the relationship between the predictor variable (the price of the CPU) and the response variable (CPU performance). Subsequently, the study will be able to produce a linear model and equation that can be used to predict the price of a CPU depending on its performance, which is usually measured through benchmarks.  Finally, through residual analysis, the researchers should be able to determine the accuracy of the linear model. The study, therefore, assumes a null hypothesis which states that the linear model obtained does not account for the variation of the CPU prices.</font>
 
 ## Results
 
@@ -91,8 +87,7 @@ autoplot(object = model) + theme_classic()
 
 ---
 
-<font size="3">
-(to be added later)
+|           <font size="3">The data set is able to show the price, performance, and general information of CPUs and showed a positive correlation between CPU price and performance. The analysis was able to exhibit this relationship using a linear model. This can be useful for those looking into purchasing computers or CPUs, since it allows them to determine which CPU will offer the most performance at the price point of their choosing and vice versa. 
 </font>
 
 
