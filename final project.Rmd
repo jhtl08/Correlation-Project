@@ -5,7 +5,7 @@ date: 'July 21, 2022'
 output: 
   html_document:
       code_folding: "show"
-      theme: united
+      theme: cerulean
 ---
 
 #
